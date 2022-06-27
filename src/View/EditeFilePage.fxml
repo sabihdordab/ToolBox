@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EditFileController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="chooseFileBTN" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Choose File" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="160.0" prefHeight="312.0" prefWidth="600.0">
+         <children>
+            <TextArea fx:id="TXT" prefHeight="237.0" prefWidth="569.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="210.0" prefHeight="37.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="74.0" text="File Name :" />
+            <TextField fx:id="fileNameFLD" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="354.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="saveBTN" mnemonicParsing="false" prefHeight="25.0" prefWidth="237.0" text="Save Change" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="365.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="errorLBL" alignment="CENTER" prefHeight="26.0" prefWidth="376.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>

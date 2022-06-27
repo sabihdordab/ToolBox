@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #DDF3F5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TimerPageController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="110.0">
+         <children>
+            <Label alignment="CENTER" text="Hour" textFill="#0b0816">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="293.0" layoutY="52.0" text="Minutes" textFill="#0b0816">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="310.0" layoutY="52.0" text="Seconds" textFill="#0b0816">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="474.0" layoutY="22.0" text="MilliSeconds" textFill="#0b0816">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="3.0">
+         <children>
+            <TextField fx:id="hourFLD" promptText="Hour" />
+            <TextField fx:id="minutesFLD" layoutX="236.0" layoutY="48.0" promptText="Minutes" />
+            <TextField fx:id="secondFLD" layoutX="310.0" layoutY="48.0" promptText="Second" />
+            <TextField fx:id="milliSecondFLD" layoutX="415.0" layoutY="18.0" promptText="Milli Second" />
+         </children>
+         <padding>
+            <Insets left="3.0" right="3.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="299.0" prefWidth="600.0" spacing="30.0">
+         <children>
+            <Label fx:id="hourLBL" alignment="CENTER" prefHeight="33.0" prefWidth="127.0" text="00  :">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="minutesLBL" alignment="CENTER" layoutX="247.0" layoutY="73.0" prefHeight="33.0" prefWidth="127.0" text="00  :">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="secondLBL" alignment="CENTER" layoutX="168.0" layoutY="73.0" prefHeight="33.0" prefWidth="127.0" text="00  :">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="milliSecondLBL" alignment="CENTER" layoutX="404.0" layoutY="107.0" prefHeight="37.0" prefWidth="74.0" text="00  ">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="160.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="startBTN" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="Start" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="errorLBL" alignment="CENTER" prefHeight="35.0" prefWidth="227.0">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>

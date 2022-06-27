@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="249.0" prefWidth="354.0" style="-fx-background-color: #DDF3F5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ClockPageController">
+    <children>
+        <HBox alignment="CENTER" prefHeight="201.0" prefWidth="354.0" spacing="3.0">
+            <children>
+                <Label fx:id="timeLBL" alignment="CENTER" prefHeight="86.0" prefWidth="270.0">
+                    <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+    </children>
+</VBox>

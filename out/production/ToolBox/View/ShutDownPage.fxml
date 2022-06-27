@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #DDF3F5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ShutDownPageController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="516.0" spacing="30.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="216.0" text="When  system should shut down?">
+               <padding>
+                  <Insets top="5.0" />
+               </padding></Label>
+            <HBox alignment="CENTER" prefHeight="95.0" prefWidth="458.0" spacing="90.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="23.0" prefWidth="117.0" text="Hours" />
+                  <Label alignment="CENTER" layoutX="193.0" layoutY="46.0" prefHeight="23.0" prefWidth="116.0" text="Minutes" />
+                  <Label alignment="CENTER" layoutX="302.0" layoutY="46.0" prefHeight="23.0" prefWidth="117.0" text="Seconds" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="340.0" spacing="15.0">
+               <children>
+                  <TextField fx:id="hourFLD" prefHeight="25.0" prefWidth="216.0" promptText="Hours" />
+                  <TextField fx:id="MinutesFLD" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="216.0" promptText="Minutes" />
+                  <TextField fx:id="secondFLD" layoutX="159.0" layoutY="10.0" prefHeight="25.0" prefWidth="216.0" promptText="Seconds" />
+               </children>
+            </HBox>
+            <Button fx:id="ShutDownBTN" mnemonicParsing="false" prefHeight="38.0" prefWidth="104.0" text="Shut Down" />
+            <Label fx:id="errorLBL" alignment="CENTER" prefHeight="41.0" prefWidth="200.0" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial Bold Italic" size="16.0" />
+               </font>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</HBox>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #DDF3F5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.BaseConveratorPageController">
+   <children>
+      <VBox alignment="CENTER_RIGHT" prefHeight="400.0" prefWidth="122.0" spacing="20.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="113.0" text="number :">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></Label>
+            <Label layoutX="41.0" layoutY="202.0" prefHeight="17.0" prefWidth="114.0" text="base :">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="210.0" prefHeight="17.0" prefWidth="117.0" text="convert to base :">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="185.0" spacing="20.0">
+         <children>
+            <TextField fx:id="NumberFLD" prefHeight="25.0" prefWidth="130.0" />
+            <TextField fx:id="baseFLD" layoutX="10.0" layoutY="198.0" prefHeight="25.0" prefWidth="130.0" />
+            <TextField fx:id="convertToBaseFLD" layoutX="10.0" layoutY="185.0" prefHeight="25.0" prefWidth="130.0" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="187.0" spacing="10.0">
+         <children>
+            <Label fx:id="ErrorLBL" alignment="CENTER" contentDisplay="CENTER" prefHeight="77.0" prefWidth="164.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <Button fx:id="convertBTN" mnemonicParsing="false" prefHeight="36.0" prefWidth="86.0" text="convert" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

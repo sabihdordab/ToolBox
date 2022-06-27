@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #DDF3F5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainPageController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="95.0" prefWidth="600.0" spacing="120.0">
+         <children>
+            <Button fx:id="NotepadBTN" mnemonicParsing="false" prefHeight="63.0" prefWidth="115.0" text="Notepad" textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pic/notepadIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="StopewatchBTN" layoutX="140.0" layoutY="38.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="115.0" text="Stopewatch" textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pic/stopewatchIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="TimerBTN" layoutX="140.0" layoutY="38.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="115.0" text="Timer" textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pic/timerIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="74.0" prefHeight="95.0" prefWidth="600.0" spacing="120.0">
+         <children>
+            <Button fx:id="PhonebookBTN" mnemonicParsing="false" prefHeight="63.0" prefWidth="115.0" text="Phonebook" textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pic/phonebookIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="MediaPlayerBTN" layoutX="140.0" layoutY="38.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="115.0" text="Media Player" textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pic/mediaplayerIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="DateConverterBTN" layoutX="140.0" layoutY="38.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="115.0" text="Date converter" textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pic/dateconverterIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="95.0" prefWidth="600.0" spacing="120.0">
+         <children>
+            <Button fx:id="CalculatorBTN" mnemonicParsing="false" prefHeight="63.0" prefWidth="115.0" text="Calculator" textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pic/calculatorIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="ZipUnzipBTN" layoutX="140.0" layoutY="38.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="115.0" text="Zip(Unzip)" textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pic/zipandunzipIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="SystemShutDowningBTN" layoutX="140.0" layoutY="38.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="115.0" text="System Shut Downing" textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pic/SystemShutDowningIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="86.0" prefWidth="600.0" spacing="120.0">
+         <children>
+            <Button fx:id="AgeCalculatorBTN" alignment="CENTER" mnemonicParsing="false" prefHeight="63.0" prefWidth="115.0" text="Age Calculator" textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pic/ageCalculatorIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="ClockBTN" alignment="CENTER" layoutX="253.0" layoutY="15.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="115.0" text="Online Clock" textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pic/clockIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="ExitBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="29.0" prefWidth="84.0" text="Exit" wrapText="true">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

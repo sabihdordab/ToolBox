@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="808.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MediaPlayerPageController">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="650.0" fitWidth="900.0">
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </MediaView>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Slider fx:id="timeSlider" prefHeight="14.0" prefWidth="874.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="210.0" prefHeight="69.0" prefWidth="921.0" spacing="5.0">
+         <children>
+            <Button fx:id="ChooseVideoBTN" mnemonicParsing="false" text="Open Video" />
+            <Button fx:id="PlayBTN" mnemonicParsing="false" text="Play" />
+            <Button fx:id="PauseBTN" layoutX="499.0" layoutY="32.0" mnemonicParsing="false" text="Pause" />
+            <Button fx:id="StopBTN" layoutX="516.0" layoutY="32.0" mnemonicParsing="false" text="Stop" />
+            <Button fx:id="SlowBTN" layoutX="545.0" layoutY="32.0" mnemonicParsing="false" text="&lt;&lt;&lt;" />
+            <Button fx:id="FastBTN" layoutX="568.0" layoutY="32.0" mnemonicParsing="false" text="&gt;&gt;&gt;" />
+            <Button fx:id="back10BTN" layoutX="591.0" layoutY="32.0" mnemonicParsing="false" text="-10s" />
+            <Button fx:id="skip10BTN" layoutX="615.0" layoutY="32.0" mnemonicParsing="false" text="+10s" />
+            <Slider fx:id="volSlider" />
+         </children></HBox>
+   </children>
+</VBox>
